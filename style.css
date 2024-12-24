@@ -479,6 +479,19 @@ footer {
         gap: 1em; /* Reduce gap for smaller screens */
     }
 }
+.responsive-embed {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width: 768px) {
+    .responsive-embed {
+        width: 80%; /* Adjust the width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
 
 @media(max-width: 768px) {
     #home h1 {
