@@ -368,7 +368,6 @@ form
 form .input-box
 {
     display: flex;
-    padding-left: 25px;
     flex-direction: column;
     align-items: baseline;
     gap: 1em;
