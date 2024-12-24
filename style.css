@@ -354,12 +354,9 @@ section
 #contact {
     background-color: var(--second-background); /* Corrected typo */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Align items at the top */
-    padding: 5% 0;
-    width: 100%;
-    margin-top: 5em; /* Add margin to move it down from the navbar */
+    justify-content: center;
+    padding: 5% 0; /* Add padding to ensure spacing */
 }
 
 form {
