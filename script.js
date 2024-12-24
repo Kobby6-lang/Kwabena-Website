@@ -21,6 +21,7 @@ menu.onclick = () =>
         });
     });
     
+    
     document.addEventListener('DOMContentLoaded', function() {
         const navLinks = document.getElementById('nav-links');
         const menu = document.getElementById('menu');
