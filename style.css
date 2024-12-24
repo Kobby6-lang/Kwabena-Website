@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +19,12 @@ body {
     background-color: var(--background);
 }
 
+/* Navbar Styles */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2em 5%; /* Adjusted for smaller screens */
+    padding: 1em 5%; /* Adjusted for smaller screens */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +36,7 @@ nav {
 ul {
     display: flex;
     align-items: center;
-    gap: 3em;
+    gap: 1em;
 }
 
 nav ul a {
@@ -48,7 +50,7 @@ nav ul a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Adjusted for smaller screens */
     color: white;
     font-weight: 800;
     opacity: 0.8;
@@ -59,13 +61,14 @@ nav ul a:hover {
     opacity: 1;
 }
 
+/* Button Styles */
 .btn {
     padding: 0.5em 1em;
     color: white;
     font-weight: 500;
     letter-spacing: 1px;
     border-radius: 0.5em;
-    font-size: 1.1em;
+    font-size: 1em; /* Adjusted for smaller screens */
     border: 2px solid white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -91,13 +94,14 @@ span {
 
 #menu {
     color: white;
-    font-size: 3rem;
+    font-size: 2rem; /* Adjusted for smaller screens */
     display: none;
 }
 
+/* Section Styles */
 section {
     min-height: 100vh;
-    padding: 5% 5%; /* Adjusted for smaller screens */
+    padding: 5% 5%;
 }
 
 #home {
@@ -110,9 +114,10 @@ section {
 }
 
 #home img {
-    width: 50vw; /* Adjusted for smaller screens */
+    width: 50vw;
+    max-width: 200px; /* Ensure max-width for larger screens */
     border-radius: 50%;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .info-box {
@@ -124,12 +129,12 @@ section {
 }
 
 .info-box h1 {
-    font-size: 3em; /* Adjusted for smaller screens */
+    font-size: 2.5em;
     font-weight: 500;
 }
 
 .info-box h3 {
-    font-size: 1.5em; /* Adjusted for smaller screens */
+    font-size: 1.5em;
     font-weight: 400;
 }
 
@@ -139,6 +144,8 @@ section {
 
 .btn-box {
     display: flex;
+    flex-direction: column; /* Stack buttons on small screens */
+    align-items: center; /* Center buttons */
     gap: 1em;
 }
 
@@ -152,6 +159,7 @@ section {
     color: white;
 }
 
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 20px;
     background-color: var(--background);
@@ -161,28 +169,30 @@ section {
     background: linear-gradient(to bottom, #6cff52, #3ec5ff);
 }
 
+/* About Section Styles */
 #about {
-    background-color: var(--second-background); /* Corrected typo */
+    background-color: var(--second-background);
     display: flex;
     align-items: center;
-    gap: 2em; /* Adjusted for smaller screens */
-    flex-direction: column; /* Adjusted for smaller screens */
+    flex-direction: column;
+    text-align: center; /* Center text on smaller screens */
+    gap: 2em;
 }
 
-#about-img {
-    width: 80vw; /* Adjusted for smaller screens */
+#about img {
+    width: 80vw;
+    max-width: 300px; /* Ensure max-width for larger screens */
     border-radius: 1em;
 }
 
 .about-box {
     display: flex;
     flex-direction: column;
-    text-align: center; /* Adjusted for smaller screens */
     gap: 2em;
 }
 
 .about-box h1 {
-    font-size: 3em; /* Adjusted for smaller screens */
+    font-size: 2.5em;
 }
 
 .about-box p {
@@ -190,11 +200,11 @@ section {
     opacity: 0.8;
 }
 
+/* Skills Section Styles */
 .skills {
     display: flex;
-    text-align: center; /* Adjusted for smaller screens */
-    flex-direction: column; /* Adjusted for smaller screens */
-    gap: 2em; /* Adjusted for smaller screens */
+    flex-direction: column; /* Stack skills on smaller screens */
+    gap: 2em;
 }
 
 .skills ul {
@@ -204,7 +214,6 @@ section {
     flex-direction: column;
     color: white;
     opacity: 0.8;
-    align-items: baseline;
 }
 
 .skills ul li span {
@@ -227,22 +236,24 @@ section {
     font-size: 2.5em;
 }
 
+/* Portfolio Section Styles */
 #portfolio {
     background-color: var(--background);
 }
 
 .header {
     text-align: center;
-    font-size: 4em; /* Adjusted for smaller screens */
+    font-size: 3em;
     margin: 0.5em 0;
 }
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2em;
 }
 
+/* Sketchfab Embed Styles */
 .sketchfab-embed-wrapper {
     display: flex;
     flex-direction: column;
@@ -252,12 +263,13 @@ section {
     background-color: black;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px var(--background)
+    box-shadow: 0 4px 8px var(--background);
 }
 
 .sketchfab-embed-wrapper iframe {
     width: 100%;
-    height: 200px; /* Adjusted for smaller screens */
+    height: auto;
+    max-width: 300px; /* Adjust for larger screens */
     border-radius: 10px;
 }
 
@@ -278,6 +290,7 @@ section {
     text-decoration: underline;
 }
 
+/* Box Styles */
 .box {
     border: 3px solid rgb(49, 49, 49);
     border-radius: 0.5em;
@@ -310,8 +323,9 @@ section {
     border-radius: 0.5em;
 }
 
+/* Contact Section Styles */
 #contact {
-    background-color: var(--second-background); /* Corrected typo */
+    background-color: var(--second-background);
 }
 
 form {
@@ -345,6 +359,7 @@ form input:focus {
     background: rgb(129, 129, 129);
 }
 
+/* Footer Styles */
 footer {
     display: flex;
     align-items: center;
@@ -406,9 +421,9 @@ footer {
 }
 
 /* Responsive Adjustments for Smaller Screens */
-@media(max-width: 968px) {
+@media (max-width: 968px) {
     section {
-        padding: 8em 5%; /* Adjusted for smaller screens */
+        padding: 8em 5%;
     }
 
     nav .btn {
@@ -445,28 +460,28 @@ footer {
     }
 
     #home h1 {
-        font-size: 3em; /* Adjusted for smaller screens */
+        font-size: 3em;
     }
 
     #home h3 {
-        font-size: 1.5em; /* Adjusted for smaller screens */
+        font-size: 1.5em;
     }
 
     #home img {
-        width: 40vw; /* Adjusted for smaller screens */
+        width: 40vw;
     }
 
     #about {
         flex-direction: column;
-        align-items: center; /* Center content on smaller screens */
+        align-items: center;
     }
 
     #about img {
-        width: 50vw; /* Adjusted for smaller screens */
+        width: 50vw;
     }
 
     #about h1 {
-        font-size: 3em; /* Adjusted for smaller screens */
+        font-size: 3em;
     }
 
     #about ul {
@@ -475,55 +490,42 @@ footer {
 
     #about .skills {
         flex-direction: column;
-        align-items: center; /* Center content on smaller screens */
-        gap: 1em; /* Reduce gap for smaller screens */
-    }
-}
-.responsive-embed {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-@media(max-width: 768px) {
-    .responsive-embed {
-        width: 80%; /* Adjust the width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+        align-items: center;
+        gap: 1em;
     }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
     #home h1 {
-        font-size: 2.5em; /* Further adjusted for very small screens */
+        font-size: 2.5em;
     }
 
     #home h3 {
-        font-size: 1.5em; /* Further adjusted for very small screens */
+        font-size: 1.5em;
     }
 
     #home img {
-        width: 60vw; /* Further adjusted for very small screens */
+        width: 60vw;
     }
 
     #about .skills {
-        gap: 3em; /* Adjusted for smaller screens */
+        gap: 3em;
     }
 
     #portfolio .header {
-        font-size: 3em; /* Adjusted for smaller screens */
+        font-size: 3em;
     }
 
     #contact .header {
-        font-size: 3em; /* Adjusted for smaller screens */
+        font-size: 3em;
     }
 
     #contact .input-box span {
-        font-size: 1.2em; /* Adjusted for smaller screens */
+        font-size: 1.2em;
     }
 
     .input-box input {
-        padding: 0.5em 1em; /* Adjusted for smaller screens */
+        padding: 0.5em 1em;
     }
 
     footer {
@@ -533,47 +535,45 @@ footer {
     }
 }
 
-@media(max-width: 480px) {
+@media (max-width: 480px) {
     .btn {
-        font-size: 1em; /* Adjusted for very small screens */
-        padding: 0.5em; /* Adjusted for very small screens */
+        font-size: 1em;
+        padding: 0.5em;
     }
 
     .info-box h1 {
-        font-size: 2.5em; /* Further adjusted for very small screens */
+        font-size: 2.5em;
     }
 
     .info-box h3 {
-        font-size: 1.2em; /* Further adjusted for very small screens */
+        font-size: 1.2em;
     }
 
     .header {
-        font-size: 2.5em; /* Further adjusted for very small screens */
+        font-size: 2.5em;
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for very small screens */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .sketchfab-embed-wrapper iframe {
-        height: 150px; /* Further adjusted for very small screens */
+        height: 150px;
     }
 
     .about-box h1 {
-        font-size: 2.5em; /* Further adjusted for very small screens */
+        font-size: 2.5em;
     }
 
     .about-box p {
-        font-size: 1em; /* Further adjusted for very small screens */
+        font-size: 1em;
     }
 
     .skills ul {
-        font-size: 1em; /* Adjusted for smaller screens */
+        font-size: 1em;
     }
 
     footer {
         padding: 2em 5%;
     }
 }
-
-
