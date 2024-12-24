@@ -13,12 +13,36 @@ menu.onclick = () =>
     
             if (scrollTop === 0) {
                 // At the top of the page - show the navbar
-                nav.style.top = "0";
+                nav.style.top = "1";
             } else {
                 // Not at the top - hide the navbar
                 nav.style.top = "-900px"; // Adjust the value based on your navbar height
             }
         });
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.getElementById('nav-links');
+        const menu = document.getElementById('menu');
+    
+        function toggleMenu() {
+            navLinks.classList.toggle('active');
+        }
+    
+        function resizeHandler() {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.add('mobile');
+            } else {
+                navLinks.classList.remove('mobile');
+            }
+        }
+    
+        // Initial check
+        resizeHandler();
+    
+        // Add event listener
+        window.addEventListener('resize', resizeHandler);
+        menu.addEventListener('click', toggleMenu);
     });
     
     
