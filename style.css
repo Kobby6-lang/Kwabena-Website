@@ -356,8 +356,9 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content both horizontally and vertically */
-    padding: 5em 15%; /* Adjust padding for spacing */
+    justify-content: flex-start; /* Align items at the top */
+    padding: 5% 0;
+    width: 100%;
     margin-top: 5em; /* Add margin to move it down from the navbar */
 }
 
@@ -396,7 +397,6 @@ form input {
 form input:focus {
     background: rgb(129, 129, 129);
 }
-
 
 
 footer
