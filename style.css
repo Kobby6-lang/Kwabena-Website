@@ -369,7 +369,7 @@ form
 { 
     display: flex; 
     flex-direction: column; 
-    align-items: left; 
+    align-items: baseline; 
     gap: 1em; 
 } 
 
