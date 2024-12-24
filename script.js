@@ -21,30 +21,6 @@ menu.onclick = () =>
         });
     });
     
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.getElementById('nav-links');
-        const menu = document.getElementById('menu');
-    
-        function toggleMenu() {
-            navLinks.classList.toggle('active');
-        }
-    
-        function resizeHandler() {
-            if (window.innerWidth <= 768) {
-                navLinks.classList.add('mobile');
-            } else {
-                navLinks.classList.remove('mobile');
-            }
-        }
-    
-        // Initial check
-        resizeHandler();
-    
-        // Add event listener
-        window.addEventListener('resize', resizeHandler);
-        menu.addEventListener('click', toggleMenu);
-    });
-    
     
     
         
