@@ -490,12 +490,7 @@ footer
         background: rgba(0, 0, 0, 0.9);
         display: none;
     }
-
-    .links.mobile 
-    { 
-        display: none; 
-    }
-
+    
     .links a
     {
         margin: 2em 0;
