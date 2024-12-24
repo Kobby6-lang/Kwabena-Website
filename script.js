@@ -13,7 +13,7 @@ menu.onclick = () =>
     
             if (scrollTop === 0) {
                 // At the top of the page - show the navbar
-                nav.style.top = "1";
+                nav.style.top = "0";
             } else {
                 // Not at the top - hide the navbar
                 nav.style.top = "-900px"; // Adjust the value based on your navbar height
