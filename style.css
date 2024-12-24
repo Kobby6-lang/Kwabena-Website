@@ -461,6 +461,14 @@ footer
 {
     color: white;
 }
+.mobile {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 
 @media(max-width: 968px)
 {
