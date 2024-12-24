@@ -354,9 +354,10 @@ section
 #contact {
     background-color: var(--second-background); /* Corrected typo */
     display: flex;
+    flex-direction: column; /* Change direction to column */
     align-items: center;
-    justify-content: center;
-    padding: 5% 0; /* Add padding to ensure spacing */
+    justify-content: flex-start; /* Align items at the top */
+    padding: 2em 0; /* Adjust padding to ensure spacing */
 }
 
 form {
