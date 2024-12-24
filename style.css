@@ -364,7 +364,8 @@ form {
 }
 
  form .input-box 
-{ display: flex; 
+{ 
+    display: flex; 
     flex-direction: column; 
     align-items: baseline; 
     gap: 1em; 
