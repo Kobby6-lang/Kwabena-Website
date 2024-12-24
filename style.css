@@ -371,6 +371,7 @@ form .input-box
     flex-direction: column;
     align-items: baseline;
     gap: 1em;
+    height: 140px;
 }
 
 .input-box span
