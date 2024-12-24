@@ -26,7 +26,6 @@ nav
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.5s; /* Adjust the duration as needed */
     padding: 2em 15%;
     display: flex;
     align-items: center;
@@ -280,7 +279,6 @@ section
     gap: 2em;
 }
 
-/* Sketchfab Embed Styles */
 .sketchfab-embed-wrapper {
     display: flex;
     flex-direction: column;
@@ -290,13 +288,12 @@ section
     background-color: black;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px var(--background);
+    box-shadow: 0 4px 8px var(--background)
 }
 
 .sketchfab-embed-wrapper iframe {
     width: 100%;
-    height: auto;
-    max-width: 300px; /* Adjust for larger screens */
+    height: 400px; /* Adjust height as necessary */
     border-radius: 10px;
 }
 
@@ -315,16 +312,6 @@ section
 
 .sketchfab-embed-wrapper a:hover {
     text-decoration: underline;
-}
-
-@media (orientation: landscape) and (max-width: 768px) {
-    .sketchfab-embed-wrapper iframe {
-        height: 250px; /* Adjust height for landscape orientation */
-    }
-
-    .sketchfab-embed-wrapper p {
-        font-size: 13px;
-    }
 }
 
 .box
@@ -474,14 +461,6 @@ footer
 {
     color: white;
 }
-.mobile {
-    display: none;
-}
-
-.active {
-    display: block;
-}
-
 
 @media(max-width: 968px)
 {
@@ -600,4 +579,3 @@ footer
         align-items: baseline;
     }
 }
-
