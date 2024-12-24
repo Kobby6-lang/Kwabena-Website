@@ -280,6 +280,7 @@ section
     gap: 2em;
 }
 
+/* Sketchfab Embed Styles */
 .sketchfab-embed-wrapper {
     display: flex;
     flex-direction: column;
