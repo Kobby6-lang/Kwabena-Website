@@ -272,12 +272,21 @@ section
     margin: 0.5em 0;
 }
 
+.responsive-embed {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: to give the image rounded corners */
+}
+
 .portfolio-container
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2em;
 }
+
 
 .sketchfab-embed-wrapper {
     display: flex;
